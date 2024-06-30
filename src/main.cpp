@@ -10,4 +10,7 @@ int main() {
   
   std::string input;
   std::getline(std::cin, input);
+  
+  // Print unregonized command
+  std::cout << input << ": command not found"<< std::endl;
 }
