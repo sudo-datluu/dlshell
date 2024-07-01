@@ -2,6 +2,8 @@
 #include "commands/exitCommand/exitCommand.hpp"
 #include "commands/unrecognized/unrecognized.hpp"
 #include "commands/echo/echoCommand.hpp"
+#include "commands/typeCmd/typeCmd.hpp"
+
 #include "utils/parser.hpp"
 
 #include <iostream>
@@ -34,6 +36,9 @@ int main() {
       return exitCommand(args);
     case Command::echo:
       echoCommand(args);
+      break;
+    case Command::typeCmd:
+      typeCommand(args);
       break;
     }
   }

@@ -9,5 +9,8 @@ Command stringToCommand(std::string commandString) {
     if (commandString == "echo") {
         return Command::echo;
     }
+    if (commandString == "type") {
+        return Command::typeCmd;
+    }
     return Command::unrecognized;
 };
