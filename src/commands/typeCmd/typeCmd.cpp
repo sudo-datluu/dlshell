@@ -22,7 +22,7 @@ void getCommandType(Command command, std::string cmdString ) {
         std::cout << cmdString << ": not found" << std::endl;
         break;
     default:
-        std::cout << cmdString << ": is a shell builtin" << std::endl;
+        std::cout << cmdString << " is a shell builtin" << std::endl;
         break;
     }
 }
